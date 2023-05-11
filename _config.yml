@@ -10,11 +10,11 @@ baseurl: "/"
 
 # Website info
 title: Eclectic Sheep
-description: Distributing Reinforcement Learning
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+description: Distributed Reinforcement Learning
+cover: assets/images/blog-cover.png
+logo: assets/images/sheep_logo.png
+logo_dark: assets/images/sheep_logo.png
+favicon: assets/images/sheep_logo.png
 CNAME: #add cname for website to be created
 
 # Social info
@@ -24,6 +24,7 @@ subscribers: True # you need to connect an external service for this to work,
 # by editing `_includes/subscribe-form.html`
 twitter:  # replace by your username
 facebook:  # replace by your username
+github: eclectic-sheep # replace by your username
 
 # Disqus
 disqus: False
