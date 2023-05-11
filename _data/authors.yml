@@ -1,0 +1,48 @@
+davide:
+  username: DavideTr8
+  name: Davide
+  url_full: https://github.com/DavideTr8
+  url: davidetr8.github.io
+  bio: I'm graduated student at the University of Padua, Italy. I'm studying Math and I'm interested in Optimization and Reinfocement Learning.
+  picture: assets/images/ghost.png
+  facebook:
+  twitter:
+  cover:
+federico:
+  username: Federico
+  name: Federico
+  location: None
+
+refik:
+  username: john
+  name: John O'Nolan
+  location: On a plane
+  url_full: http://john.onolan.org/
+  url: john.onolan.org
+  bio: Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites.
+  picture: assets/images/john.jpg
+  facebook: False
+  twitter: False
+  cover: False
+luca:
+  username: lewis
+  name: Lewis Carroll
+  location: Cheshire, England
+  url_full: False
+  url: False
+  bio: My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.
+  picture: assets/images/lewis.jpeg
+  facebook: False
+  twitter: False
+  cover: False
+michele:
+  username: abraham
+  name: Abraham Lincoln
+  location: Kentucky, USA
+  url_full: False
+  url: False
+  bio: I was the 16th president of the USA until I was assassinated in April of 1865. I led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.
+  picture: assets/images/abraham.jpg
+  facebook: False
+  twitter: False
+  cover: False
