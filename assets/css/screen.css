@@ -75,6 +75,13 @@ body {
     width: 100%;
 }
 
+/* Added by me */
+.second-inner {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
 /* Usage:
 
 <div class="outer">
@@ -85,19 +92,30 @@ body {
 
 */
 
+/* Added by me */
+.home-description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
 /* 3. Special Template Styles
 /* ---------------------------------------------------------- */
 
 @media (min-width: 900px) {
-    .home-template .post-feed,
+    .home-template .home-description,
     .tag-template .post-feed,
     .author-template .post-feed {
-        margin-top: -70px;
-        padding-top: 0;
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+    .home-description .post-feed {
+        margin: 12px;
     }
     .home-template .site-nav {
         position: relative;
-        top: -70px;
+        top: 0px;
     }
 }
 
@@ -325,6 +343,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .subscribe-button {
+    position: absolute;
+    right: 0px;
     display: block;
     padding: 4px 10px;
     border: #fff 1px solid;
@@ -336,6 +356,26 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .subscribe-button:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.copy-code-button {
+    position: relative;
+    right: 10px;
+    bottom: -22px;
+    display: block;
+    padding: 4px 9px;
+    border: #fff 1px solid;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    font-size: 1.0rem;
+    line-height: 1em;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.copy-code-button:hover {
     text-decoration: none;
     opacity: 1;
 }
@@ -418,7 +458,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: block;
     padding: 25px 25px 0;
-    color: #000d34;
+    color: #000;
 }
 
 .post-card-content-link:hover {
