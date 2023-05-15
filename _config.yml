@@ -68,13 +68,13 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: eclectic-sheep
-repo: TODO
-branch: master
-relative_source: ../jasper2/
-destination: ../jasper2-pages/
-production_url:  https://jekyllt.github.io/jasper2/
-source_url:  https://github.com/jekyllt/jasper2/
+username: Eclectic-Sheep
+repo: eclectic-sheep.github.io
+branch: main
+relative_source: ../eclectic-sheep/
+destination: ../eclectic-sheep-pages/
+production_url:  https://eclectic-sheep.github.io/
+source_url:  https://github.com/Eclectic-Sheep/eclectic-sheep.github.io
 
 exclude:
   - assets/css
