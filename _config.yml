@@ -6,15 +6,15 @@ language: 'en-uk'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: "/"
+baseurl: ''
 
 # Website info
 title: Eclectic Sheep
 description: Distributed Reinforcement Learning
-cover: assets/images/blog-cover.png
-logo: assets/images/sheep_logo.png
-logo_dark: assets/images/sheep_logo.png
-favicon: assets/images/sheep_logo.png
+cover: /assets/images/blog-cover.png
+logo: /assets/images/sheep_logo.png
+logo_dark: /assets/images/sheep_logo.png
+favicon: /assets/images/sheep_logo.png
 CNAME: #add cname for website to be created
 
 # Social info
