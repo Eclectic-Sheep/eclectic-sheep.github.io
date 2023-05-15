@@ -30,8 +30,7 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="second-inner">
         <div class="home-description">
-            {% capture p1 %}{% include introduction.md %}{% endcapture %}
-            {{ p1 | markdownify }}
+            {% include introduction.html %}
         </div>
     </div>
     <div class="inner">

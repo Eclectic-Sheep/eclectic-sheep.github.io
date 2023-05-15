@@ -111,7 +111,7 @@ body {
         padding-top: 24px;
     }
     .home-description .post-feed {
-        margin: 12px;
+        margin: 48px;
     }
     .home-template .site-nav {
         position: relative;
@@ -182,7 +182,7 @@ body {
 }
 
 .site-logo {
-    max-height: 100px;
+    max-height: 150px;
 }
 
 .site-description {
@@ -361,13 +361,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .copy-code-button {
-    position: relative;
-    right: 10px;
-    bottom: -22px;
     display: block;
     padding: 4px 9px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: #000 1px solid;
+    color: #000;
     background: rgba(0, 0, 0, 0);
     font-size: 1.0rem;
     line-height: 1em;
@@ -530,6 +527,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
  */
 
+/*
 @media (min-width: 795px) {
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) {
         flex: 1 1 100%;
@@ -569,7 +567,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
         padding: 0 40px 30px;
     }
 }
-
+---------------------------------------------------------- */
 .home-template .site-header:after {
     display: none;
 }
@@ -1059,6 +1057,7 @@ Usage (In Ghost editor):
     background-size: 20px 100%;
     background-repeat: no-repeat;
 }
+
 
 .post-full-content table td:last-child {
     background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);

@@ -1,7 +1,7 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 100 # it will paginate after this number
+paginate: 3 # it will paginate after this number
 language: 'en-uk'
 words_per_minute: 200
 
@@ -12,9 +12,9 @@ baseurl: "/"
 title: Eclectic Sheep
 description: Distributed Reinforcement Learning
 cover: assets/images/blog-cover.png
-logo: assets/images/sheep_logo.png
-logo_dark: assets/images/sheep_logo.png
-favicon: assets/images/sheep_logo.png
+logo: assets/images/sheep_logo-removebg.png
+logo_dark: assets/images/sheep_logo-removebg.png
+favicon: assets/images/sheep_logo-removebg.png
 CNAME: #add cname for website to be created
 
 # Social info
