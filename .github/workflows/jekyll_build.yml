@@ -1,31 +1,22 @@
-name: Build and Deploy Jekyll
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
   push:
     branches:
       - main
+      - master
 
 jobs:
-  build:
+  github-pages:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
         with:
-          ruby-version: 2.7.x
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@2.0.5    # Choose any one of the Jekyll Actions
+        with:                                # Some relative inputs of your action
+          token: ${{ secrets.GITHUB_TOKEN }}
