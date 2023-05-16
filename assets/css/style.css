@@ -29,9 +29,13 @@ h2{
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
-    max-width: 900px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+section{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .feature-code{
@@ -95,7 +99,7 @@ h2{
     height: 105px;
     border-radius: 8px;
 }
-.code-block code[data-index="1"]{
+.code-block code[data-index="0"]{
     opacity: 1;
 }
 
@@ -236,6 +240,42 @@ h2{
 @media (max-width: 992px){
     .code-section{
         max-width: 960px;
+    }
+}
+
+@media (max-width: 900px){
+    .feature-code.inner{
+        flex-direction: column;
+    }
+    .tab-container .features{
+        flex-direction: row;
+        height: 130px;
+        min-width: 1048px;
+    }
+    .tab-container{
+        overflow: auto;
+    }
+    .feature-wrapper:not(:last-child) .feature {
+        border-right: 1px solid #cfcfcf;
+        border-bottom: unset;
+    }
+    .code-block code{
+        opacity: 1 !important;
+    }
+    .code-wrapper{
+        display: none;
+    }
+    .code-wrapper[data-index="0"]{
+        display: block;
+    }
+    .code-container{
+        height: 120px;
+    }
+    .code-section, .code-section>span{
+        padding-left: 0;
+    }
+    .tab-container, .tab-container .features{
+        padding-right: 0;
     }
 }
 @media (max-width: 768px){

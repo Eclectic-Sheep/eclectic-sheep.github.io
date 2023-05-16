@@ -3,28 +3,28 @@
     <div class="feature-code inner">
         <div class="tab-container">
             <div class="features">
-                <div class="feature-wrapper active" data-index="1">
+                <div class="feature-wrapper active" data-index="0">
                     <div class="feature">
                         <div class="title">Easy-to-use framework</div>
                         <div class="description">Run reinforcement learning algorithms with a single simple instruction.</div>
                     </div>
                 </div>
-                <div class="feature-wrapper" data-index="2">
+                <div class="feature-wrapper" data-index="1">
                     <div class="feature">
                         <div class="title">Accelerated with Lightning Fabric</div>
                         <div class="description">Thanks to Fabric, we provide a simple, scalable and efficient framework.</div>
                     </div>
                 </div>
-                <div class="feature-wrapper" data-index="3">
+                <div class="feature-wrapper" data-index="2">
                     <div class="feature">
                         <div class="title">Distributed Training</div>
                         <div class="description">Run your agents on multiple gpus.</div>
                     </div>
                 </div>
-                <div class="feature-wrapper" data-index="4">
+                <div class="feature-wrapper" data-index="3">
                     <div class="feature">
                         <div class="title">Use different algorithms</div>
-                        <div class="description">you can use one of the already available algorithms, or create your own.</div>
+                        <div class="description">You can use one of the already available algorithms, or create your own.</div>
                     </div>
                 </div>
             </div>
@@ -33,19 +33,19 @@
             <div class="code-container">
                 <div class="code-block">
                     <span>
-                        <code data-index="1">
+                        <code data-index="0">
                             <span class="token-wrapper">
                                 <span class="token bright">sheeprl ppo --env_id=CartPole-v1</span>
                             </span>
                         </code>
 
-                        <code data-index="2">
+                        <code data-index="1">
                             <span class="token-wrapper">
                                 <span class="token bright">lightning run model sheeprl.py</span> <span class="token">ppo</span>
                             </span>
                         </code>
 
-                        <code data-index="3">
+                        <code data-index="2">
                             <span class="token-wrapper">
                                 <span class="token">lightning run model</span> 
                                 <span class="token bright">--devices=2 --accelerator=gpu</span> 
@@ -53,7 +53,7 @@
                             </span>
                         </code>
 
-                        <code data-index="4">
+                        <code data-index="3">
                             <span class="token-wrapper">
                                 <span class="token">lightning run model sheeprl.py</span>
                                 <span class="token bright">sac --env_id=LunarLanderContinuous-v2 --total_steps=2e6 --capture_video</span> 

@@ -1,9 +1,11 @@
-let codes = document.querySelectorAll('.highlight > pre > code');
+let codes = document.querySelectorAll('code');
 let countID = 0;
 codes.forEach((code) => {
 
     var wrapper = document.createElement('div');
     wrapper.style.position = 'relative';
+    wrapper.setAttribute("class", "code-wrapper");
+    wrapper.setAttribute("data-index", countID)
 
     code.parentNode.replaceChild(wrapper, code);
 
@@ -22,6 +24,8 @@ codes.forEach((code) => {
     btn.style.width = "30px";
     btn.style.height = "30px";
     btn.style.position = "absolute";
+    btn.style.right = "5px";
+    btn.style.top = "5px";
     // btn.style.right = "1em";
 
     wrapper.appendChild(btn);
