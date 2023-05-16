@@ -499,5 +499,5 @@ background-color: #dc3545;  /* Red */
 }
 
 .btn--primary {
-background-color: #007bff;  /* Blue */
+background-color: rgba(0,0,0,0);  /* Blue */
 }
