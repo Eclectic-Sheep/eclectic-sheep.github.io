@@ -1,47 +1,71 @@
-Train and deploy Reinforcement Learning agents faster with SheepRL.
+<section class="index-sec">
+    <h2>Train and deploy Reinforcement Learning agents faster with SheepRL.</h2>
+    <div class="feature-code inner">
+        <div class="tab-container">
+            <div class="features">
+                <div class="feature-wrapper active" data-index="1">
+                    <div class="feature">
+                        <div class="title">Easy-to-use framework</div>
+                        <div class="description">Run reinforcement learning algorithms with a single simple instruction.</div>
+                    </div>
+                </div>
+                <div class="feature-wrapper" data-index="2">
+                    <div class="feature">
+                        <div class="title">Accelerated with Lightning Fabric</div>
+                        <div class="description">Thanks to Fabric, we provide a simple, scalable and efficient framework.</div>
+                    </div>
+                </div>
+                <div class="feature-wrapper" data-index="3">
+                    <div class="feature">
+                        <div class="title">Distributed Training</div>
+                        <div class="description">Run your agents on multiple gpus.</div>
+                    </div>
+                </div>
+                <div class="feature-wrapper" data-index="4">
+                    <div class="feature">
+                        <div class="title">Use different algorithms</div>
+                        <div class="description">you can use one of the already available algorithms, or create your own.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-section">
+            <div class="code-container">
+                <div class="code-block">
+                    <span>
+                        <code data-index="1">
+                            <span class="token-wrapper">
+                                <span class="token bright">sheeprl ppo --env_id=CartPole-v1</span>
+                            </span>
+                        </code>
 
+                        <code data-index="2">
+                            <span class="token-wrapper">
+                                <span class="token bright">lightning run model sheeprl.py</span> <span class="token">ppo</span>
+                            </span>
+                        </code>
 
-<!DOCTYPE html>
-<html>
+                        <code data-index="3">
+                            <span class="token-wrapper">
+                                <span class="token">lightning run model</span> 
+                                <span class="token bright">--devices=2 --accelerator=gpu</span> 
+                                <span class="token">sheeprl.py ppo</span>
+                            </span>
+                        </code>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Two-Column Layout Example</title>
-  <style>
-    .container {
-      display: flex;
-      align-items: center;
-    }
-
-    .left-column {
-      width: 50%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .right-column {
-      width: 50%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="left-column" style="text-align: right">
-      Quick training with just one bash command
+                        <code data-index="4">
+                            <span class="token-wrapper">
+                                <span class="token">lightning run model sheeprl.py</span>
+                                <span class="token bright">sac --env_id=LunarLanderContinuous-v2 --total_steps=2e6 --capture_video</span> 
+                            </span>
+                        </code>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="right-column">
-      <div style="position: relative;">
-        <pre style="width: 500px;">
-            <code id="my-code-snippet" class="language-bash">
-sheep_rl ppo --env CartPole-v0
-            </code>
-          </pre>
-      </div>
-    </div>
-  </div>
-</body>
+</section>
 
-</html>
+<section class="tensorboard">   
+    <h2>Monitor your experiments with tensorboard</h2>
+</section>
