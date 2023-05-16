@@ -22,7 +22,7 @@ into the {body} of the default.hbs template -->
 <!-- #post -->
 
 <main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+    <div class="post-inner">
 
         <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
@@ -54,14 +54,6 @@ into the {body} of the default.hbs template -->
                 </div>
             </section>
 
-            <!-- Email subscribe form at the bottom of the page -->
-            {% if site.subscribers %}
-                <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to {{ site.title }}</h3>
-                    <p>Get the latest posts delivered right to your inbox</p>
-                    {% include subscribe-form.html placeholder="youremail@example.com" %}
-                </section>
-            {% endif %}
 
             <footer class="post-full-footer">
                 <!-- Everything inside the #author tags pulls data from the author -->
@@ -90,36 +82,15 @@ into the {body} of the default.hbs template -->
                 
             </footer>
 
-            <!-- If you use Disqus comments, just uncomment this block.
-            The only thing you need to change is "test-apkdzgmqhj" - which
-            should be replaced with your own Disqus site-id. -->
-            {% if site.disqus or page.disqus %}
-                <section class="post-full-comments">
-                    <div id="disqus_thread"></div>
-                    <script>
-                        var disqus_config = function () {
-                            var this_page_url = '{{ site.url }}{{ page.url }}';
-                            var this_page_identifier = '{{ page.id }}';
-                            var this_page_title = '{{ page.title }}';
-                        };
-                        (function() {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                </section>
-            {% endif %}
-
-        </article>
+       </article>
 
     </div>
 </main>
 
 <!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
-    <div class="inner">
+    <div class="post-inner">
+        <h2>You might also be interested in...</h2>
         <div class="read-next-feed">
             {% if page.tags.size > 0 %}
                 {% assign primary = page.tags | first %}
