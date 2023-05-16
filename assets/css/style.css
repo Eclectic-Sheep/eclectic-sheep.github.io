@@ -115,6 +115,8 @@ section{
     user-select: text;
     gap: 5px;
     white-space: nowrap;
+    width: fit-content;
+    width: -moz-fit-content;
 }
 .code-block code .token-wrapper .token{
     font-weight: bold;
