@@ -31,9 +31,17 @@
 .site-header:not(.homepage){
     background: white;
 }
+.site-header:not(.homepage){
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
 .site-header.outer.white a,
 .site-header:not(.homepage) a{
     color: black;
+}
+.site-header:not(.homepage) a:not(.subscribe-button){
+    padding-top: 0;
+    padding-bottom: 0
 }
 h2.custom{
     font-size: 36px;
