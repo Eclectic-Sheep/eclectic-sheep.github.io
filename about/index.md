@@ -1,14 +1,12 @@
 ---
 layout: page
 current: about
-title: About
+title: About Us
 navigation: true
 logo: 'assets/images/.png'
 class: page-template
 subclass: 'post page'
 ---
-
-# About Us
 
 Welcome to SheepRL, where we shepherd the future of reinforcement learning.
 
@@ -18,4 +16,6 @@ We're not just enthusiasts—we're specialists in developing RL algorithms that 
 
 We also believe in the power of collaboration. We invite anyone—researcher, business, or innovator—who shares our excitement for RL to join us on this exciting journey. Our collaborations go beyond making products. We're eager to discover new RL applications, solve critical problems, and change the way we use technology. We're envisioning a future where artificial intelligence is more than a tool—it's a partner that helps us reach new heights. We think your contribution could be the spark for the next big RL breakthrough. So, let's work together to use RL to create innovative solutions and a more efficient, adaptable, and smart world. We're excited to explore these possibilities with you.
 
-We also like to write about Reinforcement Learning, check out our <a href="/posts/">posts</a> for interesting use cases of RL algorithms.
+If you want to get in touch, just <a href="mailto:federico.belotti@orobix.com">contact us!</a>
+
+We also like to write about Reinforcement Learning, check out our posts!

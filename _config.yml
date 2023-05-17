@@ -11,7 +11,7 @@ baseurl: ''
 # Website info
 title: Eclectic Sheep
 description: Distributed Reinforcement Learning
-cover: assets/images/blog-cover_old.png
+cover: assets/images/blog-cover.png
 logo: assets/images/sheep_logo-removebg.png
 logo_dark: assets/images/sheep_logo-removebg.png
 favicon: assets/images/sheep_logo.png
@@ -94,3 +94,4 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+  - _posts/2023-05-16-functionality-checks.md
