@@ -356,7 +356,15 @@ code .token-wrapper .token.numbers{
     .tab-container{
         width: 75%;
     }
-    
+    .two-columns-container{
+        flex-direction: column;
+    }
+    .code-flex{
+        align-items: center;
+    }
+    .code-flex .code-wrapper{
+        display: flex !important;
+    }
 }
 @media (max-width: 992px){
     .code-section{
