@@ -32,16 +32,14 @@ into the {body} of the default.hbs template -->
 
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-        <div class="home-description">
-            {% include introduction.html %}
-        </div>
+    <div class="home-description">
+        {% include introduction.html %}
     </div>
-    <div class="inner">
-        <div class="post-feed">
+    <div class="post-feed yellow-bg", style="padding: 0 4vw; padding-bottom: 30px; padding-top: 60px;">
+        <div class="inner">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {%  include post-card.html %}
         </div>
-
     </div>
+
 </main>
