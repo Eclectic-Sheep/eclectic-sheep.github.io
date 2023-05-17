@@ -433,3 +433,11 @@ code .token-wrapper .token.numbers{
         max-width: 540px;
     }
 }
+
+@media (max-width: 475px){
+    .code-flex .video-container,
+    .code-flex code{
+        width: 300px!important;
+
+    }
+}

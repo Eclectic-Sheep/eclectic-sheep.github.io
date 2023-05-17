@@ -649,10 +649,11 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-image {
     margin: 0 0vw 50px;
-    height: 900px;
-    background: var(--lightgrey) center center;
+    height: 550px;
+    /* background: var(--lightgrey) center center; */
     background-size: cover;
     border-radius: 5px;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 1170px) {
