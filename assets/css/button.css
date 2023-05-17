@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.highlight>pre>div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn-copy {
+    color: #949494;
+    background-color: #EB3A3A00;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-copy:hover {
+    border-radius: 2px;
+    border: 1px solid #949494;
+}
+
+
+.btn--success {
+    color: #25de50;
+    border-color: #25de50;
+}
