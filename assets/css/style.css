@@ -272,6 +272,10 @@ section{
     display: flex;
     flex-direction: row;
     height: 210px;
+    flex-wrap: wrap;
+    height: fit-content;
+    height: -moz-fit-content;
+    justify-content: center;
 }
 .gif-container img{
     height: 210px;
