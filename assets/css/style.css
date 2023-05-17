@@ -27,7 +27,8 @@
 .site-header.outer.white::before,
 .site-header.outer.white::after,
 .site-header:not(.homepage)::before,
-.site-header:not(.homepage)::after{
+.site-header:not(.homepage)::after,
+.site-header:not(.homepage){
     background: white;
 }
 .site-header.outer.white a,
