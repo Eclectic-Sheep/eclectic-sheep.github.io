@@ -265,6 +265,13 @@ section{
     width: fit-content;
     width: -moz-fit-content;
 }
+.video-container.shadow{
+    box-shadow: #9f9f9f 0 0 20px 0px;
+    border-radius: 8px;
+}
+.video-container.shadow video{
+    border-radius: 8px;
+}
 .video-container video{
     max-width: 100%;
 }
