@@ -94,3 +94,4 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+  - _posts/2023-05-16-functionality-checks.md
