@@ -249,6 +249,45 @@ section{
     color: #7c6553;
 }
 
+.two-columns-container{
+    display: flex;
+    flex-direction: row;
+}
+.two-columns-container .tensorboard{
+    width: 50%;
+    padding-right: 16px;
+}
+.two-columns-container .capture-video{
+    width: 50%;
+    padding-left: 16px;
+}
+.video-container{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.video-container.shadow{
+    box-shadow: #9f9f9f 0 0 20px 0px;
+    border-radius: 8px;
+}
+.video-container.shadow video{
+    border-radius: 8px;
+}
+.video-container video{
+    max-width: 100%;
+}
+.gif-container{
+    display: flex;
+    flex-direction: row;
+    height: 210px;
+    flex-wrap: wrap;
+    height: fit-content;
+    height: -moz-fit-content;
+    justify-content: center;
+}
+.gif-container img{
+    height: 210px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1200px){
     .code-section{
