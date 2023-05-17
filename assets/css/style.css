@@ -24,8 +24,17 @@
 *:hover::-webkit-scrollbar-thumb {
     background: #edce9e;
 }
-
-h2{
+.site-header.outer.white::before,
+.site-header.outer.white::after,
+.site-header:not(.homepage)::before,
+.site-header:not(.homepage)::after{
+    background: white;
+}
+.site-header.outer.white a,
+.site-header:not(.homepage) a{
+    color: black;
+}
+h2.custom{
     font-size: 36px;
     margin-bottom: 34px;
     text-align: center;

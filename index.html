@@ -11,7 +11,10 @@ into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
 
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url(/{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+<header class="site-header outer white">
+    {% include site-nav.html %}
+</header>
+<div class="site-header homepage outer {% if page.cover or site.cover %}" style="background-image:  url(/{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
@@ -23,9 +26,9 @@ into the {body} of the default.hbs template -->
             </h1>
             <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
         </div>
-        {% include site-nav.html %}
+        <!-- {% include site-nav.html %} -->
     </div>
-</header>
+</div>
 
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
