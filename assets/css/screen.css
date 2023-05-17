@@ -191,7 +191,7 @@ body {
 .site-description {
     z-index: 10;
     position: relative;
-    left: 64px;
+    /* left: 64px; */
     margin: 0;
     padding: 5px 0;
     font-size: 3.3rem;
@@ -407,10 +407,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         margin-right: 0;
         padding-left: 4vw;
     }
-
+/* 
     .site-nav-right {
         display: none;
-    }
+    } */
 }
 
 
