@@ -14,7 +14,7 @@ into the {body} of the default.hbs template -->
 <header class="site-header outer white">
     {% include site-nav.html %}
 </header>
-<div class="site-header homepage outer {% if page.cover or site.cover %}" style="background-image:  url(/{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+<div class="site-header homepage outer {% if page.cover or site.cover %}" style="padding-top: 64px; background-image:  url(/{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">

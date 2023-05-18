@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
     
     // Document Ctrl + C
-    const sources = document.querySelectorAll("code");
+    const sources = document.querySelectorAll("code:not(.with-new-line)");
     
     sources.forEach(source => {
         source.addEventListener("copy", (event) => {

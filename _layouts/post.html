@@ -19,7 +19,7 @@ into the {body} of the default.hbs template -->
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<main id="site-main" class="site-main outer" role="main">
+<main id="site-main" class="site-main outer" role="main" style="padding-left: 4vw; padding-right: 4vw; padding-top: 64px;">
     <div class="post-inner">
 
         <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">

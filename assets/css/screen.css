@@ -156,7 +156,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    height: 80px;
+    height: 64px;
     background: linear-gradient(#000d24, #000d34);
 }
 
@@ -650,7 +650,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-image {
     margin: 0 0vw 50px;
     height: 550px;
-    /* background: var(--lightgrey) center center; */
+    background-position: center;
     background-size: cover;
     border-radius: 5px;
     background-repeat: no-repeat;
