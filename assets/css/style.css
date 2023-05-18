@@ -445,4 +445,10 @@ code .token-wrapper .token.numbers{
     code{
         font-size: 12px !important;
     }
+    .site-header .site-nav .nav a{
+        padding: 0 6px;
+    }
+    .site-header .site-nav-logo{
+        margin-right: 10px;
+    }
 }

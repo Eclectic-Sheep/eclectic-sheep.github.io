@@ -12,8 +12,15 @@ into the {body} of the default.hbs template -->
 <!-- <script src="{{ site.baseurl }}assets/js/copyCode.js"></script> -->
 
 
-<header class="site-header outer">
+<header class="site-header post outer">
     {% include site-nav.html %}
+
+    {% include floating-header.html %}
+    <progress class="progress" value="0" style="top: -2px;">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
 </header>
 
 <!-- Everything inside the #post tags pulls data from the post -->

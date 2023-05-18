@@ -1,5 +1,5 @@
 <div class="floating-header">
-    <div class="floating-header-logo">
+    <!-- <div class="floating-header-logo">
         <a href="{{ site.url }}/">
             {% if site.logo_dark %}
             <img src="/{{ site.logo_dark }}" alt="{{ site.title }} icon" />
@@ -8,9 +8,9 @@
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">{{ page.title }}</div>
+    <div class="floating-header-title">{{ page.title }}</div> -->
     <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this {% include point.html %}</div>
+        <!-- <div class="floating-header-share-label">Share this {% include point.html %}</div> -->
         <a class="floating-header-share-tw"
             href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
@@ -27,9 +27,9 @@
             {% include linkedin.html %}
         </a>
     </div>
-    <progress class="progress" value="0">
+    <!-- <progress class="progress" value="0">
         <div class="progress-container">
             <span class="progress-bar"></span>
         </div>
-    </progress>
+    </progress> -->
 </div>

@@ -1,12 +1,18 @@
 $(document).ready(function () {
     var ctrlDown = false,
-    ctrlKey = 17,
-    cmdKey = 91,
-    vKey = 86,
-    cKey = 67;
+        ctrlKey = 17,
+        cmdKey = 91,
+        vKey = 86,
+        cKey = 67;
 
     $(".index-sec .code-wrapper[data-index=0]").addClass("active");
     $(".capture-video .code-wrapper[data-index=4]").addClass("active");
+    $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
+
+    $(window).on("resize", function () {
+        $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
+    })
+
     $(".index-sec .feature-wrapper").on("mouseover", function () {
         if (!$(this).hasClass("active")) {
             $(".index-sec .feature-wrapper.active, .index-sec code.active, .index-sec .code-wrapper.active").removeClass("active");
@@ -24,19 +30,19 @@ $(document).ready(function () {
         }
     });
 
-    $(document).keydown(function(e) {
+    $(document).keydown(function (e) {
         if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
-    }).keyup(function(e) {
+    }).keyup(function (e) {
         if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
     });
 
-    $(".no-copy-paste").keydown(function(e) {
+    $(".no-copy-paste").keydown(function (e) {
         if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
     });
-    
+
     // Document Ctrl + C
     const sources = document.querySelectorAll("code:not(.with-new-line)");
-    
+
     sources.forEach(source => {
         source.addEventListener("copy", (event) => {
             const selection = document.getSelection();
