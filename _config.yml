@@ -9,7 +9,7 @@ words_per_minute: 200
 baseurl: ''
 
 # Website info
-title: Eclectic Sheep
+title: EclecticSheep
 description: Distributed Reinforcement Learning
 cover: assets/images/blog-cover.png
 logo: assets/images/sheep_logo-removebg.png

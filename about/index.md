@@ -8,9 +8,9 @@ class: page-template
 subclass: 'post page'
 ---
 
-Welcome to Eclectic Sheep, where we shepherd the future of reinforcement learning.
+Welcome to EclecticSheep, where we shepherd the future of reinforcement learning.
 
-At Eclectic Sheep, we're a group of driven experts, **passionate about the world of reinforcement learning (RL)**. Our goal is simple but ambitious: to push RL boundaries and create smart agents that can change our lives. We see the huge potential RL holds and are committed to bringing its power from simulated settings to the challenges of real-world scenarios.
+At EclecticSheep, we're a group of driven experts, **passionate about the world of reinforcement learning (RL)**. Our goal is simple but ambitious: to push RL boundaries and create smart agents that can change our lives. We see the huge potential RL holds and are committed to bringing its power from simulated settings to the challenges of real-world scenarios.
 
 We're not just enthusiasts—**we're specialists in developing RL algorithms that are ready for real-world use**. With our roots in the gaming industry, we've gained unique insights into how RL algorithms can be applied. Games, with their complex, ever-changing landscapes, have been an ideal training ground for our algorithms. This experience has equipped us with the skills to craft RL algorithms that can handle complexity and change—vital capabilities in any industry.
 
