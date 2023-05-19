@@ -1416,11 +1416,11 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .floating-header {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: static;
+    /* top: 0;
+    right: 0; */
     width: fit-content;
-    left: -200px;
+    /* left: -200px; */
     z-index: 1000;
     display: -ms-flexbox;
     display: flex;
@@ -1428,6 +1428,7 @@ Usage (In Ghost editor):
     align-items: center;
     height: 64px;
     background: white;
+    align-self: flex-start;
 }
 
 .floating-active {

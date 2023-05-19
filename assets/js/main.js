@@ -7,11 +7,11 @@ $(document).ready(function () {
 
     $(".index-sec .code-wrapper[data-index=0]").addClass("active");
     $(".capture-video .code-wrapper[data-index=4]").addClass("active");
-    $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
+    // $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
 
-    $(window).on("resize", function () {
-        $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
-    })
+    // $(window).on("resize", function () {
+    //     $(".floating-header").css("left", $(".subscribe-button").position().left - $(".floating-header").width() + parseInt($(".site-header.outer").css("padding-left")) - 10);
+    // })
 
     $(".index-sec .feature-wrapper").on("mouseover", function () {
         if (!$(this).hasClass("active")) {

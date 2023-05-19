@@ -15,7 +15,6 @@ into the {body} of the default.hbs template -->
 <header class="site-header post outer">
     {% include site-nav.html %}
 
-    {% include floating-header.html %}
     <progress class="progress" value="0" style="bottom: -2px;">
         <div class="progress-container">
             <span class="progress-bar"></span>
@@ -56,6 +55,7 @@ into the {body} of the default.hbs template -->
             <section class="post-full-content">
                 <div class="kg-card-markdown">
                     {{ content }}
+                    {% include floating-header.html %}
                 </div>
             </section>
 
@@ -84,14 +84,13 @@ into the {body} of the default.hbs template -->
                 {% endfor %}
             </footer> -->
             <!-- /author  -->
-
        </article>
 
     </div>
 </main>
 
 <!-- Links to Previous/Next posts -->
-<aside class="read-next outer">
+<aside class="read-next outer" style="padding: 0 4vw;">
     <div class="post-inner">
         <h2>You might also be interested in...</h2>
         <div class="read-next-feed">
