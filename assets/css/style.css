@@ -34,6 +34,11 @@
 .site-header:not(.homepage){
     padding-left: 4vw;
     padding-right: 4vw;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000 !important;
+    box-shadow: 0px -5px 20px 0 #9f9f9f;
 }
 .site-header.outer.white a,
 .site-header:not(.homepage) a{
@@ -141,9 +146,8 @@ section.big-padding-top{
     padding: 0 8px;
     user-select: text;
     gap: 5px;
-    white-space: nowrap;
-    width: fit-content;
-    width: -moz-fit-content;
+    white-space: normal;
+    width: 100%;
 }
 code .token-wrapper .token{
     font-weight: bold;
@@ -426,5 +430,25 @@ code .token-wrapper .token.numbers{
 @media (max-width: 576px){
     .code-section{
         max-width: 540px;
+    }
+}
+
+@media (max-width: 475px){
+    .code-flex .video-container,
+    .code-flex code{
+        width: 300px!important;
+
+    }
+}
+
+@media (max-width: 400px){
+    code{
+        font-size: 12px !important;
+    }
+    .site-header .site-nav .nav a{
+        padding: 0 6px;
+    }
+    .site-header .site-nav-logo{
+        margin-right: 10px;
     }
 }

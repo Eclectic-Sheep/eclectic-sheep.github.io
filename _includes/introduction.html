@@ -7,13 +7,15 @@
                     <div class="feature-wrapper active" data-index="0">
                         <div class="feature">
                             <div class="title">Easy-to-use framework</div>
-                            <div class="description">Run reinforcement learning algorithms with a single simple instruction.</div>
+                            <div class="description">Run reinforcement learning algorithms with a single simple
+                                instruction.</div>
                         </div>
                     </div>
                     <div class="feature-wrapper" data-index="1">
                         <div class="feature">
                             <div class="title">Accelerated with Lightning Fabric</div>
-                            <div class="description">Thanks to Fabric, we provide a simple, scalable and efficient framework.</div>
+                            <div class="description">Thanks to Fabric, we provide a simple, scalable and efficient
+                                framework.</div>
                         </div>
                     </div>
                     <div class="feature-wrapper" data-index="2">
@@ -25,7 +27,8 @@
                     <div class="feature-wrapper" data-index="3">
                         <div class="feature">
                             <div class="title">Use different algorithms</div>
-                            <div class="description">You can use one of the already available algorithms, or create your own.</div>
+                            <div class="description">You can use one of the already available algorithms, or create your
+                                own.</div>
                         </div>
                     </div>
                 </div>
@@ -36,20 +39,27 @@
                         <span>
                             <code data-index="0" class="active">
                                 <span class="token-wrapper">
-                                    <span class="token bright">sheeprl ppo --env_id=CartPole-v1</span>
+                                    <span class="token bright">
+                                        sheeprl ppo 
+                                        <span style="white-space: nowrap;">--env_id=CartPole-v1</span>
+                                    </span>
                                 </span>
                             </code>
 
                             <code data-index="1">
                                 <span class="token-wrapper">
-                                    <span class="token bright">lightning run model sheeprl.py</span> <span class="token">ppo</span>
+                                    <span class="token bright">lightning run model sheeprl.py</span>
+                                    <span class="token">ppo</span>
                                 </span>
                             </code>
 
                             <code data-index="2">
                                 <span class="token-wrapper">
                                     <span class="token">lightning run model</span> 
-                                    <span class="token bright">--devices=2 --accelerator=gpu</span> 
+                                    <span class="token bright">
+                                        <span style="white-space: nowrap;">--devices=2</span>
+                                        <span style="white-space: nowrap;">--accelerator=gpu</span>
+                                    </span> 
                                     <span class="token">sheeprl.py ppo</span>
                                 </span>
                             </code>
@@ -57,7 +67,12 @@
                             <code data-index="3">
                                 <span class="token-wrapper">
                                     <span class="token">lightning run model sheeprl.py</span>
-                                    <span class="token bright">sac --env_id=LunarLanderContinuous-v2 --total_steps=2e6 --capture_video</span> 
+                                    <span class="token bright">
+                                        sac 
+                                        <span style="white-space: nowrap;">--env_id=LunarLanderContinuous-v2</span>
+                                        <span style="white-space: nowrap;">--total_steps=2000000</span>
+                                        <span style="white-space: nowrap;">--capture_video</span>
+                                    </span> 
                                 </span>
                             </code>
                         </span>
@@ -111,19 +126,68 @@
                         <span>
                             <code data-index="4" class="active">
                                 <span class="token-wrapper">
-                                    <span class="token">lightning run model --devices="2,3" --accelerator=gpu sheeprl.py ppo_atari</span><br />
-                                    <span class="token bright">--env_id=PongNoFrameskip-v4</span> <span class="token">--anneal_lr --anneal_ent_coef --anneal_clip_coef</span><br />
-                                    <span class="token">--ent_coef=0.01 --clip_coef=0.1 --rollout_steps=128 --lr=2.5e-4 --update_epochs=3</span><br />
-                                    <span class="token">--num_envs=8 --per_rank_batch_size=128</span> <span class="token bright">--capture_video</span>
+                                    <span class="token">lightning run model
+                                        <span style="white-space: nowrap;">--devices="2,3"</span>
+                                        <span style="white-space: nowrap;">--accelerator=gpu</span>
+                                        sheeprl.py ppo_atari
+                                    </span>
+                                    <span class="token bright">
+                                        <span style="white-space: nowrap;">--env_id=PongNoFrameskip-v4</span>
+                                    </span>
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--anneal_lr</span>
+                                        <span style="white-space: nowrap;">--anneal_ent_coef</span>
+                                        <span style="white-space: nowrap;">--anneal_clip_coef</span>
+                                    </span>
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--ent_coef=0.01</span>
+                                        <span style="white-space: nowrap;">--clip_coef=0.1</span>
+                                        <span style="white-space: nowrap;">--rollout_steps=128</span>
+                                        <span style="white-space: nowrap;">--lr=2.5e-4</span>
+                                        <span style="white-space: nowrap;">--update_epochs=3</span>
+                                    </span>
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--num_envs=8</span>
+                                        <span style="white-space: nowrap;">--per_rank_batch_size=128</span>
+                                        <span style="white-space: nowrap;">--total_steps=40000000</span>
+                                    </span>
+                                    <span class="token bright">
+                                        <span style="white-space: nowrap;">--capture_video</span>
+                                    </span>
                                 </span>
                             </code>
 
                             <code data-index="5">
                                 <span class="token-wrapper">
-                                    <span class="token">lightning run model --devices="2,3" --accelerator=gpu sheeprl.py ppo_atari</span><br />
-                                    <span class="token bright">--env_id=BreakoutNoFrameskip-v4</span> <span class="token">--anneal_lr --anneal_ent_coef --anneal_clip_coef</span><br />
-                                    <span class="token">--ent_coef=0.01 --clip_coef=0.1 --rollout_steps=128 --lr=2.5e-4 --update_epochs=3</span><br />
-                                    <span class="token">--num_envs=8 --per_rank_batch_size=128</span> <span class="token bright">--capture_video</span>
+                                    <span class="token">
+                                        lightning run model 
+                                        <span style="white-space: nowrap;">--devices="2,3"</span>
+                                        <span style="white-space: nowrap;">--accelerator=gpu</span> 
+                                        sheeprl.py ppo_atari
+                                    </span>
+                                    <span class="token bright">
+                                        <span style="white-space: nowrap;">--env_id=BreakoutNoFrameskip-v4</span>
+                                    </span> 
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--anneal_lr</span>
+                                        <span style="white-space: nowrap;">--anneal_ent_coef</span>
+                                        <span style="white-space: nowrap;">--anneal_clip_coef</span>
+                                    </span>
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--ent_coef=0.01</span>
+                                        <span style="white-space: nowrap;">--clip_coef=0.1</span>
+                                        <span style="white-space: nowrap;">--rollout_steps=128</span>
+                                        <span style="white-space: nowrap;">--lr=2.5e-4</span>
+                                        <span style="white-space: nowrap;">--update_epochs=3</span>
+                                    </span>
+                                    <span class="token">
+                                        <span style="white-space: nowrap;">--num_envs=8</span>
+                                        <span style="white-space: nowrap;">--per_rank_batch_size=128</span>
+                                        <span style="white-space: nowrap;">--total_steps=40000000</span>
+                                    </span>
+                                    <span class="token bright">
+                                        <span style="white-space: nowrap;">--capture_video</span>
+                                    </span>
                                 </span>
                             </code>
                         </span>
