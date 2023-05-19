@@ -36,9 +36,11 @@ into the {body} of the default.hbs template -->
     <div class="home-description">
         {% include introduction.html %}
     </div>
-    <div class="post-feed yellow-bg", style="padding: 0 4vw; padding-bottom: 30px; padding-top: 60px;">
+    <div class="post-feed yellow-bg", style="margin: 0; padding: 0 4vw; padding-bottom: 30px; padding-top: 60px;">
         <div class="inner">
             <h2 class="custom" style="margin-top: 20px; margin-left: 20px; text-align: left;">Blog Posts</h2>
+        </div>
+        <div class="inner" style="display: flex; flex-wrap: wrap;">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {%  include post-card.html %}
         </div>
