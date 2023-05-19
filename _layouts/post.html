@@ -12,14 +12,21 @@ into the {body} of the default.hbs template -->
 <!-- <script src="{{ site.baseurl }}assets/js/copyCode.js"></script> -->
 
 
-<header class="site-header outer">
+<header class="site-header post outer">
     {% include site-nav.html %}
+
+    {% include floating-header.html %}
+    <progress class="progress" value="0" style="bottom: -2px;">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
 </header>
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<main id="site-main" class="site-main outer" role="main">
+<main id="site-main" class="site-main outer" role="main" style="padding-left: 4vw; padding-right: 4vw; padding-top: 64px;">
     <div class="post-inner">
 
         <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
@@ -84,7 +91,7 @@ into the {body} of the default.hbs template -->
 </main>
 
 <!-- Links to Previous/Next posts -->
-<aside class="read-next outer">
+<!-- <aside class="read-next outer">
     <div class="post-inner">
         <h2>You might also be interested in...</h2>
         <div class="read-next-feed">
@@ -143,20 +150,18 @@ into the {body} of the default.hbs template -->
                     </article>
                 {% endif %}
             {% endif %}
-
-            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
             {% if page.next %}
                 {% include post-card-next.html %}
             {% endif %}
 
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             {% if page.previous %}
                 {% include post-card-previous.html %}
             {% endif %}
 
         </div>
     </div>
-</aside>
+</aside> -->
 
 <!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
 {% include floating-header.html %}
