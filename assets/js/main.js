@@ -3,8 +3,8 @@ $(document).ready(function () {
         let tutorial = document.getElementById("tutorial-installation");
         tutorial.playbackRate = 3;
     }
-    catch{
-        
+    catch (err){
+
     }
     var ctrlDown = false,
         ctrlKey = 17,
