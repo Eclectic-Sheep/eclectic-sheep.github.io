@@ -45,6 +45,18 @@ image_caption{
     margin-left: 0;
     margin-right: 0;
 }
+.blog-img-wrapper.video{
+    flex-wrap: wrap;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+.blog-img-wrapper video{
+    width: 45%;
+    object-fit: contain;
+    height: 300px;
+    margin-left: 0;
+    margin-right: 0;
+}
 #fig-rssm, #fig-imagine, #fig-rb{
     margin-bottom: 10px;
     height: 450px;
