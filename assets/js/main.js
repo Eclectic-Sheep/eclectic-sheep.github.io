@@ -15,10 +15,11 @@ $(document).ready(function () {
     $(".index-sec .code-wrapper[data-index=0]").addClass("active");
     $(".capture-video .code-wrapper[data-index=4]").addClass("active");
 
-    // $(".ref").on("click", function(){
-    //     let elem_id = $(this).attr("href");
-    //     $('html, body').animate({scrollTop: $(elem_id).offset().top - 70},'50');
-    // });
+    $(".ref-link, .fig-link").on("click", function(e){
+        e.preventDefault()
+        let elem_id = $(this).attr("href");
+        $('html, body').animate({scrollTop: $(elem_id).offset().top - 70}, "50");
+    });
 
     $(".index-sec .feature-wrapper").on("mouseover", function () {
         if (!$(this).hasClass("active")) {
