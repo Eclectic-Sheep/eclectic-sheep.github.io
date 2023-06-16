@@ -28,6 +28,14 @@ image_caption{
     font-size: 14px;
     line-height: normal;
 }
+.ref{
+    font-size: 14px;
+    line-height: normal;
+}
+.formula-wrapper{
+    width: 100%;
+    overflow-x: auto;
+}
 .always-visible .code-wrapper{
     display: block !important;
     width: 100%;
@@ -49,13 +57,19 @@ image_caption{
     flex-wrap: wrap;
     height: fit-content;
     height: -moz-fit-content;
+    margin-top: 33px;
+}
+.blog-img-wrapper .video-wrapper{
+    width: 45%;
 }
 .blog-img-wrapper video{
-    width: 45%;
+    width: 100%;
     object-fit: contain;
     height: 300px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
 #fig-rssm, #fig-imagine, #fig-rb{
     margin-bottom: 10px;
@@ -413,6 +427,9 @@ code .token-wrapper .token.txt{
     .tab-container{
         width: 75%;
     }
+    .blog-img-wrapper video{
+        height: 200px;
+    }
     .two-columns-container{
         flex-direction: column;
     }
@@ -478,6 +495,13 @@ code .token-wrapper .token.txt{
 @media (max-width: 768px){
     .code-section{
         max-width: 720px;
+    }
+    .blog-img-wrapper .video-wrapper {
+        width: 100%;
+    }
+    .blog-img-wrapper.img{
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 576px){
