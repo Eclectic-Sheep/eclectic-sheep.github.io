@@ -31,6 +31,8 @@ image_caption{
 .ref{
     font-size: 14px;
     line-height: normal;
+    text-align: left;
+    width: 100%;
 }
 .formula-wrapper{
     width: 100%;
