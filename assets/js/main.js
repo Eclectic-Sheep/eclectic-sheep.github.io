@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    try{
+    try {
         let tutorial = document.getElementById("tutorial-installation");
         tutorial.playbackRate = 3;
     }
-    catch (err){
+    catch (err) {
 
     }
     var ctrlDown = false,
@@ -15,10 +15,10 @@ $(document).ready(function () {
     $(".index-sec .code-wrapper[data-index=0]").addClass("active");
     $(".capture-video .code-wrapper[data-index=4]").addClass("active");
 
-    $(".ref-link, .fig-link").on("click", function(e){
+    $(".ref-link, .fig-link").on("click", function (e) {
         e.preventDefault()
         let elem_id = $(this).attr("href");
-        $('html, body').animate({scrollTop: $(elem_id).offset().top - 70}, "50");
+        $('html, body').animate({ scrollTop: $(elem_id).offset().top - 70 }, "50");
     });
 
     $(".index-sec .feature-wrapper").on("mouseover", function () {

@@ -2,19 +2,19 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 3 # it will paginate after this number
-language: 'en-uk'
+language: "en-uk"
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: ''
+baseurl: ""
 
 # Website info
 title: EclecticSheep
 description: Distributed Reinforcement Learning
 cover: assets/images/blog-cover.png
-logo: assets/images/sheep_logo-removebg.png
-logo_dark: assets/images/sheep_logo-removebg.png
-favicon: assets/images/sheep_logo.png
+logo: assets/images/sheep_tondo.svg
+logo_dark: assets/images/sheep_tondo.svg
+favicon: assets/images/sheep_tondo.svg
 CNAME: #add cname for website to be created
 
 # Social info
@@ -22,13 +22,12 @@ navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter:  # replace by your username
-facebook:  # replace by your username
+twitter: # replace by your username
+facebook: # replace by your username
 github: eclectic-sheep # replace by your username
 
 # Disqus
 disqus: False
-
 
 # Google Analytics
 google_analytics: # replace with your GA tracking identifier
@@ -73,8 +72,8 @@ repo: eclectic-sheep.github.io
 branch: main
 relative_source: ../eclectic-sheep/
 destination: ../eclectic-sheep-pages/
-production_url:  https://eclectic-sheep.github.io/
-source_url:  https://github.com/Eclectic-Sheep/eclectic-sheep.github.io
+production_url: https://eclectic-sheep.github.io/
+source_url: https://github.com/Eclectic-Sheep/eclectic-sheep.github.io
 
 exclude:
   - assets/css

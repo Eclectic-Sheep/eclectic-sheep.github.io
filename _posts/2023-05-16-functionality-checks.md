@@ -5,6 +5,7 @@ excerpt: Does it work?
 tags:
 published: false
 layout: post
+image_header: cover
 current: post
 cover: assets/images/dreamer.png
 navigation: True
