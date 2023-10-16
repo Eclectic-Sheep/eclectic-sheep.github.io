@@ -25,30 +25,34 @@ into the {body} of the default.hbs template -->
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<main id="site-main" class="site-main outer" role="main" style="padding-left: 4vw; padding-right: 4vw; padding-top: 64px;">
+<main id="site-main" class="site-main outer" role="main"
+    style="padding-left: 4vw; padding-right: 4vw; padding-top: 64px;">
     <div class="post-inner">
 
-        <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+        <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: " latin"
+            }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date |
+                        date:'%e %B %Y' }}</time>
                     {% if page.tags.size > 0 %}
-                        <span class="date-divider">/</span>
-                        {% for tag in page.tags %}
-                            {% if forloop.index == page.tags.size %}
-                               <a href='/tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>
-                            {% else %}
-                               <a href='/tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>,
-                            {% endif %}
-                        {% endfor %}
+                    <span class="date-divider">/</span>
+                    {% for tag in page.tags %}
+                    {% if forloop.index == page.tags.size %}
+                    <a href='/tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>
+                    {% else %}
+                    <a href='/tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>,
+                    {% endif %}
+                    {% endfor %}
                     {% endif %}
                 </section>
                 <h1 class="post-full-title">{{ page.title }}</h1>
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url(/{{ page.cover }})">
+            <figure class="post-full-image"
+                style="background-image: url(/{{ page.cover }}); background-size: {{page.image_header}}">
             </figure>
             {% endif %}
 
@@ -84,7 +88,7 @@ into the {body} of the default.hbs template -->
                 {% endfor %}
             </footer> -->
             <!-- /author  -->
-       </article>
+        </article>
 
     </div>
 </main>
@@ -95,67 +99,61 @@ into the {body} of the default.hbs template -->
         <h2>You might also be interested in...</h2>
         <div class="read-next-feed">
             {% if page.tags.size > 0 %}
-                {% assign primary = page.tags | first %}
-                {% assign related_posts = 0 %}
-                {% for post in site.posts %}
-                  {% if post.tags.size > 0 %}
-                      {% if post.tags contains primary %}
-                        {% assign related_posts = related_posts | plus: 1 %}
-                      {% endif %}
-                  {% endif %}
-                {% endfor %}
-                {% if related_posts > 1 %}
-                    <article class="read-next-card"
-                        {% if site.cover %}
-                            style="background-image: url(/{{ site.cover }})"
-                        {% else %}
-                            {% if page.cover %}
-                                style="background-image: url(url(/{{ page.cover }})"{% endif %}
-                        {% endif %}
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
-                            {% if primary %}
-                                <h3 class="read-next-card-header-title"><a href="/tag/{{ primary | slugify: "latin" }}/">{{ primary | capitalize }}</a></h3>
-                            {% endif %}
-                        </header>
-                        <div class="read-next-divider">{% include infinity.html %}</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                {% assign count = 0 %}
-                                {% for post in site.posts %}
-                                  {% if post.tags contains primary %}
-                                    {% if post.title != page.title %}
-                                        {% assign count = count | plus: 1 %}
-                                        {% if count <= 3 %}
-                                            <li><a href="/{{ post.url | remove_first: '/' }}">{{ post.title }}</a></li>
-                                        {% endif %}
-                                    {% endif %}
-                                  {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/{{ primary | slugify: "latin" }}/">
-                                {% if related_posts > 1 %}
-                                    See all {{ related_posts | minus: 1 }} posts  →
-                                {% elsif related_posts == 1 %}
-                                    {{ related_posts }} post  →
-                                {% else %}
-                                    No posts.
-                                {% endif %}
-                            </a>
-                        </footer>
-                    </article>
-                {% endif %}
+            {% assign primary = page.tags | first %}
+            {% assign related_posts = 0 %}
+            {% for post in site.posts %}
+            {% if post.tags.size > 0 %}
+            {% if post.tags contains primary %}
+            {% assign related_posts = related_posts | plus: 1 %}
             {% endif %}
-            
+            {% endif %}
+            {% endfor %}
+            {% if related_posts > 1 %}
+            <article class="read-next-card" {% if site.cover %} style="background-image: url(/{{ site.cover }})" {% else
+                %} {% if page.cover %} style="background-image: url(url(/{{ page.cover }})" {% endif %} {% endif %}>
+                <header class="read-next-card-header">
+                    <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
+                    {% if primary %}
+                    <h3 class="read-next-card-header-title"><a href="/tag/{{ primary | slugify: " latin" }}/">{{ primary
+                            | capitalize }}</a></h3>
+                    {% endif %}
+                </header>
+                <div class="read-next-divider">{% include infinity.html %}</div>
+                <div class="read-next-card-content">
+                    <ul>
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                        {% if post.tags contains primary %}
+                        {% if post.title != page.title %}
+                        {% assign count = count | plus: 1 %}
+                        {% if count <= 3 %} <li><a href="/{{ post.url | remove_first: '/' }}">{{ post.title }}</a></li>
+                            {% endif %}
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                    </ul>
+                </div>
+                <footer class="read-next-card-footer">
+                    <a href="/tag/{{ primary | slugify: " latin" }}/">
+                        {% if related_posts > 1 %}
+                        See all {{ related_posts | minus: 1 }} posts →
+                        {% elsif related_posts == 1 %}
+                        {{ related_posts }} post →
+                        {% else %}
+                        No posts.
+                        {% endif %}
+                    </a>
+                </footer>
+            </article>
+            {% endif %}
+            {% endif %}
+
             {% if page.next %}
-                {% include post-card-next.html %}
+            {% include post-card-next.html %}
             {% endif %}
 
             {% if page.previous %}
-                {% include post-card-previous.html %}
+            {% include post-card-previous.html %}
             {% endif %}
 
         </div>
