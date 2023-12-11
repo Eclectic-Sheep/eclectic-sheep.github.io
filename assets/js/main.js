@@ -49,12 +49,21 @@ $(document).ready(function () {
     });
 
     // Document Ctrl + C
-    const sources = document.querySelectorAll("code:not(.with-new-line)");
+    const sources = document.querySelectorAll(":not(.with-new-line) code");
+    const sources_new_line = document.querySelectorAll(".with-new-line code");
 
     sources.forEach(source => {
         source.addEventListener("copy", (event) => {
             const selection = document.getSelection();
             event.clipboardData.setData("text/plain", selection.toString().replace(/\s+/g, " "));
+            event.preventDefault();
+        });
+    });
+
+    sources_new_line.forEach(source => {
+        source.addEventListener("copy", (event) => {
+            const selection = document.getSelection();
+            event.clipboardData.setData("text/plain", selection.toString());
             event.preventDefault();
         });
     });
