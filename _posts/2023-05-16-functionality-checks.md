@@ -14,6 +14,7 @@ subclass: 'post'
 ---
 
 # Available Functionalities
+<div markdown="block" class="with-new-line">
 
 ```python
 
@@ -78,6 +79,7 @@ trainer = pl.Trainer(gpus=4, num_nodes=8, precision=16, limit_train_batches=0.5)
 trainer.fit(model, train_loader, val_loader)
     
 ```
+</div>
 
 # Latex Formulas
 
