@@ -1,5 +1,8 @@
 # Jekyll configuration
 markdown: kramdown
+kramdown:
+  parse_block_html: false
+  html_to_native: true
 highlighter: rouge
 paginate: 3 # it will paginate after this number
 language: "en-uk"
