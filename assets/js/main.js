@@ -67,4 +67,8 @@ $(document).ready(function () {
             event.preventDefault();
         });
     });
+
+    $(".collapsible").click(function () {
+        $(this).parent().next().slideToggle(500);
+    });
 });
