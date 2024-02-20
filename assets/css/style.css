@@ -1,10 +1,10 @@
 *::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0 6px transparent;
+    box-shadow: inset 0 0 0 6px #fdefd0;
     border-radius: 8px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: #edce9e;
     border-radius: 8px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 *:hover::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0 1px #fff, inset 0 0 0 6px #fdefd0;
+    box-shadow: inset 0 0 0 1px #fdefd0, inset 0 0 0 6px #fdefd0;
 }
 
 *:hover::-webkit-scrollbar-thumb {
