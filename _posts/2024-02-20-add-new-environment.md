@@ -24,4 +24,4 @@ The tutorial uses the Super Mario Bros environment as an example, anyway, you ca
 
 <video muted autoplay loop controls>
     <source src="/assets/videos/super_mario_dreamerV3.mp4" type="video/mp4" />
-</video><image_caption style="margin-bottom:28px; width: 100%; text-align: center; display: block;">Video 1: DreamerV3 in the Super Mario Bros environment. </image_caption>
+</video><image_caption style="margin-bottom:28px; width: 100%; text-align: center; display: block;">Video 1: DreamerV3 in the Super Mario Bros environment. Follow [our tutorial](https://lightning.ai/or-bix-srl/studios/sheeprl-how-to-integrate-super-mario-bros-enviroment?view=public&section=tutorials){:target="_blank"} and try to complete the game.</image_caption>
