@@ -41,7 +41,7 @@
                                 <span class="token-wrapper">
                                     <span class="token bright">
                                         python sheeprl exp=ppo 
-                                        <span style="white-space: nowrap;">algo=ppo algo.name=ppo env=gym env.id=CartPole-v1</span>
+                                        <span style="white-space: nowrap;">exp=ppo env=gym env.id=CartPole-v1</span>
                                     </span>
                                 </span>
                             </code>
@@ -50,7 +50,7 @@
                                 <span class="token-wrapper">
                                     <span class="token">
                                         python sheeprl.py exp=ppo
-                                        <span style="white-space: nowrap;">algo=ppo algo.name=ppo env=gym env.id=CartPole-v1</span>
+                                        <span style="white-space: nowrap;">exp=ppo env=gym env.id=CartPole-v1</span>
                                     </span>
                                     <span class="token bright">
                                         <span style="white-space: nowrap;">fabric.devices=2</span>
@@ -62,7 +62,7 @@
                                 <span class="token-wrapper">
                                     <span class="token">
                                         python sheeprl.py exp=ppo
-                                        <span style="white-space: nowrap;">algo=ppo algo.name=ppo env=gym env.id=CartPole-v1</span>
+                                        <span style="white-space: nowrap;">exp=ppo env=gym env.id=CartPole-v1</span>
                                         <span style="white-space: nowrap;">fabric.devices=2</span>
                                     </span> 
                                     <span class="token bright">
@@ -75,9 +75,9 @@
                                 <span class="token-wrapper">
                                     <span class="token">python sheeprl.py</span>
                                     <span class="token bright">
-                                        exp=sac algo=sac algo.name=sac env=gym
+                                        exp=sac env=gym
                                         <span style="white-space: nowrap;">env.id=LunarLanderContinuous-v2</span>
-                                        <span style="white-space: nowrap;">total_steps=2000000</span>
+                                        <span style="white-space: nowrap;">algo.total_steps=2000000</span>
                                         <span style="white-space: nowrap;">env.capture_video=True</span>
                                     </span> 
                                 </span>
@@ -141,7 +141,8 @@
                                         <span style="white-space: nowrap;">fabric.accelerator=gpu</span>
                                     </span>
                                     <span class="token bright">
-                                        <span style="white-space: nowrap;">cnn_keys.encoder=[rgb]</span>
+                                        <span style="white-space: nowrap;">algo.cnn_keys.encoder=[rgb]</span>
+                                        <span style="white-space: nowrap;">algo.mlp_keys.encoder=[]</span>
                                         <span style="white-space: nowrap;">env=atari</span>
                                         <span style="white-space: nowrap;">env.id=PongNoFrameskip-v4</span>
                                         <span style="white-space: nowrap;">algo.optimizer.lr=2.5e-4</span>
@@ -159,15 +160,15 @@
                                     </span>
                                     <span class="token bright">
                                         <span style="white-space: nowrap;">env.num_envs=8</span>
-                                        <span style="white-space: nowrap;">per_rank_batch_size=128</span>
-                                        <span style="white-space: nowrap;">total_steps=40000000</span>
+                                        <span style="white-space: nowrap;">algo.per_rank_batch_size=128</span>
+                                        <span style="white-space: nowrap;">algo.total_steps=40000000</span>
                                     </span>
                                     <span class="token">
                                         <span style="white-space: nowrap;">env.capture_video=True</span>
                                     </span>
                                 </span>
                             </code>
-
+                            
                             <code data-index="5">
                                 <span class="token-wrapper">
                                     <span class="token">
@@ -179,7 +180,8 @@
                                     <span class="token bright">
                                         <span style="white-space: nowrap;">env=atari</span>
                                         <span style="white-space: nowrap;">env.id=BreakoutNoFrameskip-v4</span>
-                                        <span style="white-space: nowrap;">cnn_keys.encoder=[rgb]</span>
+                                        <span style="white-space: nowrap;">algo.cnn_keys.encoder=[rgb]</span>
+                                        <span style="white-space: nowrap;">algo.mlp_keys.encoder=[]</span>
                                     </span> 
                                     <span class="token">
                                         <span style="white-space: nowrap;">algo.anneal_lr=True</span>
@@ -195,8 +197,8 @@
                                     </span>
                                     <span class="token bright">
                                         <span style="white-space: nowrap;">env.num_envs=8</span>
-                                        <span style="white-space: nowrap;">per_rank_batch_size=128</span>
-                                        <span style="white-space: nowrap;">total_steps=40000000</span>
+                                        <span style="white-space: nowrap;">algo.per_rank_batch_size=128</span>
+                                        <span style="white-space: nowrap;">algo.total_steps=40000000</span>
                                     </span>
                                     <span class="token">
                                         <span style="white-space: nowrap;">env.capture_video=True</span>

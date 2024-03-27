@@ -9,13 +9,13 @@
 }
 
 *::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
 }
 
 *::-webkit-scrollbar:hover {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
 }
 
 *:hover::-webkit-scrollbar-track {
@@ -634,7 +634,7 @@ code .token-wrapper .token.txt {
     border-radius: 5px;
 }
 
-.active,
+.active:not(.code-wrapper):not(code),
 .collapsible:hover {
     background-color: #e9d091;
 }
